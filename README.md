@@ -36,16 +36,16 @@
 5.  运行程序
 
 ```
-python 3dcnn.py --batch 16 --epoch 80 --videos ./dataset/ --nclass 92 --output 3dcnnresult/ --color True --skip False --depth 8
+python 3dcnn.py --batch 16 --epoch 80 --videos ./dataset/ --nclass 101 --output 3dcnnresult/ --color True --skip False --depth 8
 ```
-其中./dataset 是数据路径，  depth 是每个视频提取的帧数，这里设置成8， 越多的话精度越高，但是有的视频没有那么多帧，就会报错cv读取了空照片。 nclass 92 是只对./dataset下101文件夹中前92个分类，前期可以设置成3之类快速验证程序是否可运行。
+其中./dataset 是数据路径，  depth 是每个视频提取的帧数，这里设置成8， 越多的话精度越高，但是有的视频没有那么多帧，就会报错cv读取了空照片。 nclass 92 是只对./dataset下101文件夹中前101个分类，前期可以设置成3之类快速验证程序是否可运行。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200507185037914.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdXBlbmcxOTk3MDExOQ==,size_16,color_FFFFFF,t_70)
 
 
 6. 调试过程
 
 在运行过程中可能会出现以下几个问题 ： 
-**有的视频质量低，导致无法提取足够多的帧**： 需要将depth调小,或者将报错视频文件删除，如果觉得麻烦直接整个文件夹删除可以，但是分类--nclass 92中 92 也要对应少1，因为该分类不能多于文件夹的数量。只能少于。
+**有的视频质量低，导致无法提取足够多的帧**： 需要将depth调小,或者将报错视频文件删除，如果觉得麻烦直接整个文件夹删除可以，但是分类--nclass 101中 101 也要对应少1，因为该分类不能多于文件夹的数量。只能少于。
 
 **keras 报错没有acc或者accurary**: 需要更换keras对应版本下的正确命名，参照https://blog.csdn.net/liupeng19970119/article/details/105963118
 

@@ -28,7 +28,7 @@
 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200507183757510.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdXBlbmcxOTk3MDExOQ==,size_16,color_FFFFFF,t_70)
-4.  安装环境:tensorflow,keras, python-ffmpeg, tqdm,或者用我的yml文件直接生成环境，总之就是缺什么装什么。
+4.  安装环境:tensorflow,keras, python-ffmpeg, tqdm,或者用我的yml文件直接生成环境(我这里面还有很多其他项目需要的包，而且只装了kerascpu版本，所以不到万不得已不要装我的这个环境)，总之就是缺什么装什么，报错就上google查。
 
 > conda env create -f freeze.yml
 

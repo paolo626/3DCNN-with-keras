@@ -7,11 +7,7 @@
 
  # UCF101动作识别的代码复现
 
-这是我看这篇论文的重点，这里我在colab环境下实现UCF101动作识别。参照代码：
 
-> https://github.com/karolzak/conv3d-video-action-recognition
-
-经过验证该github代码存在一些逻辑问题，现已经对其进行修改，修改完成之后的复现步骤如下：
 
 1. 下载UCF101
 
